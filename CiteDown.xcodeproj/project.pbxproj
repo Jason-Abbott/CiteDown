@@ -19,6 +19,7 @@
 		96A2AF7E2905DF9F00C9C387 /* SQLiteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */; };
 		96A2AF812905E4E800C9C387 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF802905E4E800C9C387 /* Creator.swift */; };
 		96A2AF852905E59000C9C387 /* Zotero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF842905E59000C9C387 /* Zotero.swift */; };
+		96A2AF902905FCB600C9C387 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 96A2AF8F2905FCB600C9C387 /* GRDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A2AF902905FCB600C9C387 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = CiteDown;
+			packageProductDependencies = (
+				96A2AF8F2905FCB600C9C387 /* GRDB */,
+			);
 			productName = CiteDown;
 			productReference = 969212A12900700D00024E09 /* CiteDown.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 969212982900700D00024E09;
+			packageReferences = (
+				96A2AF8E2905FCB600C9C387 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
 			productRefGroup = 969212A22900700D00024E09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -463,6 +471,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CiteDown;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,10 +491,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.toba.CiteDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -501,6 +512,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CiteDown;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -519,10 +532,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.toba.CiteDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -656,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96A2AF8E2905FCB600C9C387 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96A2AF8F2905FCB600C9C387 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96A2AF8E2905FCB600C9C387 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		969212A82900700D00024E09 /* CiteDown.xcdatamodeld */ = {
