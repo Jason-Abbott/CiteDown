@@ -1,10 +1,3 @@
-//
-//  CiteDownApp.swift
-//  CiteDown
-//
-//  Created by Jason Abbott on 10/19/22.
-//
-
 import SwiftUI
 
 @main

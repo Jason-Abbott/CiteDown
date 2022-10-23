@@ -1,14 +1,6 @@
-//
-//  CiteDownTests.swift
-//  CiteDownTests
-//
-//  Created by Jason Abbott on 10/19/22.
-//
-
 import XCTest
 
 final class CiteDownTests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -31,5 +23,4 @@ final class CiteDownTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

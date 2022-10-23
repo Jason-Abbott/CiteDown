@@ -16,6 +16,9 @@
 		969212BC2900700E00024E09 /* CiteDownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969212BB2900700E00024E09 /* CiteDownTests.swift */; };
 		969212C62900700E00024E09 /* CiteDownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969212C52900700E00024E09 /* CiteDownUITests.swift */; };
 		969212C82900700E00024E09 /* CiteDownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969212C72900700E00024E09 /* CiteDownUITestsLaunchTests.swift */; };
+		96A2AF7E2905DF9F00C9C387 /* SQLiteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */; };
+		96A2AF812905E4E800C9C387 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF802905E4E800C9C387 /* Creator.swift */; };
+		96A2AF852905E59000C9C387 /* Zotero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF842905E59000C9C387 /* Zotero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		969212C12900700E00024E09 /* CiteDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiteDownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		969212C52900700E00024E09 /* CiteDownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteDownUITests.swift; sourceTree = "<group>"; };
 		969212C72900700E00024E09 /* CiteDownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteDownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSource.swift; sourceTree = "<group>"; };
+		96A2AF802905E4E800C9C387 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
+		96A2AF842905E59000C9C387 /* Zotero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zotero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		969212A32900700D00024E09 /* CiteDown */ = {
 			isa = PBXGroup;
 			children = (
+				96A2AF832905E58100C9C387 /* Sources */,
+				96A2AF822905E55900C9C387 /* Providers */,
+				96A2AF7F2905E4D900C9C387 /* Models */,
 				969212A42900700D00024E09 /* CiteDownApp.swift */,
 				969212A62900700D00024E09 /* Persistence.swift */,
 				969212AB2900700D00024E09 /* ContentView.swift */,
@@ -133,6 +142,30 @@
 				969212C72900700E00024E09 /* CiteDownUITestsLaunchTests.swift */,
 			);
 			path = CiteDownUITests;
+			sourceTree = "<group>";
+		};
+		96A2AF7F2905E4D900C9C387 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96A2AF802905E4E800C9C387 /* Creator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96A2AF822905E55900C9C387 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				96A2AF842905E59000C9C387 /* Zotero.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		96A2AF832905E58100C9C387 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				969212AA2900700D00024E09 /* CiteDown.xcdatamodeld in Sources */,
+				96A2AF7E2905DF9F00C9C387 /* SQLiteSource.swift in Sources */,
+				96A2AF812905E4E800C9C387 /* Creator.swift in Sources */,
 				969212A52900700D00024E09 /* CiteDownApp.swift in Sources */,
 				969212AC2900700D00024E09 /* ContentView.swift in Sources */,
 				969212A72900700D00024E09 /* Persistence.swift in Sources */,
+				96A2AF852905E59000C9C387 /* Zotero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
