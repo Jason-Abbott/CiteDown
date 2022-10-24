@@ -11,14 +11,14 @@ try dbQueue.read { db in
         let isFavorite: Bool = row["favorite"]
         let coordinate = CLLocationCoordinate2D(
             latitude: row["latitude"],
-            longitude: row["longitude"])
+            longitude: row["longitude"]
+        )
     }
-    
+
     // Fetch values
     let placeCount = try Int.fetchOne(db, sql: "SELECT COUNT(*) FROM place")! // Int
     let placeTitles = try String.fetchAll(db, sql: "SELECT title FROM place") // [String]
 }
-
 
 // https://github.com/groue/GRDB.swift
 class SQLiteSource {
