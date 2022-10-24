@@ -1,11 +1,7 @@
 import Foundation
+import GRDB
 
-class Creator {
+struct Creator: Codable, FetchableRecord {
     var firstName: String
     var lastName: String
-
-    init(firstName: String, lastName: String) {
-        self.firstName = firstName
-        self.lastName = lastName
-    }
 }
