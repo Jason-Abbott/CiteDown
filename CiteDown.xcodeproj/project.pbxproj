@@ -18,7 +18,6 @@
 		969212C82900700E00024E09 /* CiteDownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969212C72900700E00024E09 /* CiteDownUITestsLaunchTests.swift */; };
 		96A2AF7E2905DF9F00C9C387 /* SQLiteSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */; };
 		96A2AF812905E4E800C9C387 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF802905E4E800C9C387 /* Creator.swift */; };
-		96A2AF852905E59000C9C387 /* Zotero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2AF842905E59000C9C387 /* Zotero.swift */; };
 		96A2AF902905FCB600C9C387 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 96A2AF8F2905FCB600C9C387 /* GRDB */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		967C4C77290843FD00721993 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		967C4C79290844F500721993 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		967C4C7B29084CC700721993 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		969212A12900700D00024E09 /* CiteDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiteDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969212A42900700D00024E09 /* CiteDownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteDownApp.swift; sourceTree = "<group>"; };
 		969212A62900700D00024E09 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -55,7 +57,6 @@
 		969212C72900700E00024E09 /* CiteDownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteDownUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		96A2AF7D2905DF9F00C9C387 /* SQLiteSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSource.swift; sourceTree = "<group>"; };
 		96A2AF802905E4E800C9C387 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
-		96A2AF842905E59000C9C387 /* Zotero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zotero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967C4C76290843C100721993 /* Zotero */ = {
+			isa = PBXGroup;
+			children = (
+				967C4C77290843FD00721993 /* README.md */,
+			);
+			path = Zotero;
+			sourceTree = "<group>";
+		};
+		967C4C78290844DD00721993 /* Papers */ = {
+			isa = PBXGroup;
+			children = (
+				967C4C79290844F500721993 /* README.md */,
+			);
+			path = Papers;
+			sourceTree = "<group>";
+		};
+		967C4C7A29084CB600721993 /* CitationStyleLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				967C4C7B29084CC700721993 /* README.md */,
+			);
+			path = CitationStyleLanguage;
+			sourceTree = "<group>";
+		};
 		969212982900700D00024E09 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,7 @@
 		969212A32900700D00024E09 /* CiteDown */ = {
 			isa = PBXGroup;
 			children = (
+				967C4C7A29084CB600721993 /* CitationStyleLanguage */,
 				96A2AF832905E58100C9C387 /* Sources */,
 				96A2AF822905E55900C9C387 /* Providers */,
 				96A2AF7F2905E4D900C9C387 /* Models */,
@@ -157,7 +183,8 @@
 		96A2AF822905E55900C9C387 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				96A2AF842905E59000C9C387 /* Zotero.swift */,
+				967C4C78290844DD00721993 /* Papers */,
+				967C4C76290843C100721993 /* Zotero */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -312,7 +339,6 @@
 				969212A52900700D00024E09 /* CiteDownApp.swift in Sources */,
 				969212AC2900700D00024E09 /* ContentView.swift in Sources */,
 				969212A72900700D00024E09 /* Persistence.swift in Sources */,
-				96A2AF852905E59000C9C387 /* Zotero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
